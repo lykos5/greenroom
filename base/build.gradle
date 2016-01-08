@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -20,5 +20,9 @@ dependencies {
     //zookeeper  客户端
     compile group: 'org.apache.curator', name: 'curator-framework', version: "2.7.0"
     compile group: 'org.apache.curator', name: 'curator-recipes', version: "2.7.0"
+
+
+    //memcached客户端
+    compile 'com.googlecode.xmemcached:xmemcached:2.0.0'
 
 }
