@@ -66,7 +66,7 @@ public class XmlUtil {
             XMLSerializer xmlSerializer = new XMLSerializer();
             JSON json = xmlSerializer.read(xmlStr);
             ObjectMapper mapper = new ObjectMapper();
-            Map<String, Object> jsonInMap = xmlMapper.readValue(json.toString(1),
+            Map<String, Object> jsonInMap = mapper.readValue(json.toString(1),
                     new TypeReference<Map<String, Object>>() {
                     });
             return jsonInMap;
