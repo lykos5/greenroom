@@ -30,3 +30,4 @@ SynCountTest  CountDownLatch，一个同步辅助类.
 ThreadLocalTest ThreadLocal类的应用
     ThreadLocal为每个使用该变量的线程提供独立的变量副本
     在ThreadLocal类中有一个Map，用于存储每一个线程的变量副本，Map中元素的键为线程对象，而值对应线程的变量副本
+    声明一个公用的ThreadLocal变量所有线程访问这个变量由于不同线程,key值不同,所以同一线程能保证同一线程存取相同数据

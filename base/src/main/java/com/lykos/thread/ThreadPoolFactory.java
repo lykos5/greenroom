@@ -8,14 +8,14 @@ import java.util.concurrent.Executors;
  */
 public class ThreadPoolFactory {
 
-    private static int size = 10;
+    private static int size = 2;
 
     public static ExecutorService getExecutorService(){
-        return Executors.newFixedThreadPool(size);
+        return Executors.newFixedThreadPool(size,new OwnThreadFactory());
     }
 
 
     public static ExecutorService getExecutorService(int size){
-        return Executors.newFixedThreadPool(size);
+        return Executors.newFixedThreadPool(size,new OwnThreadFactory());
     }
 }
