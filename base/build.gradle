@@ -25,4 +25,7 @@ dependencies {
     //memcached客户端
     compile 'com.googlecode.xmemcached:xmemcached:2.0.0'
 
+    //httpclient
+    compile "org.apache.httpcomponents:httpclient:${httpclient}"
+
 }

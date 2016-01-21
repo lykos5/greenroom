@@ -1,8 +1,8 @@
 package com.lykos.jackson;
 
-import com.lykos.po.BankCard;
-import com.lykos.po.Family;
-import com.lykos.po.People;
+import com.lykos.common.po.BankCard;
+import com.lykos.common.po.Family;
+import com.lykos.common.po.People;
 import org.junit.Test;
 
 import java.util.Arrays;

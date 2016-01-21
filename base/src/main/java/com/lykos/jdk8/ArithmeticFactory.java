@@ -1,6 +1,6 @@
 package com.lykos.jdk8;
 
-import com.lykos.po.People;
+import com.lykos.common.po.People;
 
 import java.util.List;
 import java.util.stream.Collectors;

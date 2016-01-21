@@ -1,4 +1,4 @@
-package com.lykos.po;
+package com.lykos.common.po;
 
 import java.util.List;
 

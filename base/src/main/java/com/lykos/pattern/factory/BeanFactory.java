@@ -1,5 +1,6 @@
 package com.lykos.pattern.factory;
 
+import com.lykos.httpclient.HttpInvocationHander;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,7 +23,7 @@ public class BeanFactory {
      * @param <T>
      * @return
      */
-    public static <T> T getHttpBean(Class<T> target){
+    public static <T> T getBean(Class<T> target){
         /**
          * 使用jdk8,新特性,函数式编程
          */
@@ -30,16 +31,19 @@ public class BeanFactory {
             //method.invoke(this,args);
             return null;
         });
-
-
-
-        //        Proxy.newProxyInstance(BeanFactory.class.getClassLoader(), new Class[]{target}, new InvocationHandler() {
-//            @Override
-//            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-//                return null;
-//            }
-//        });
     }
+
+
+
+    public static <T> T getHttpBean(Class<T> target){
+        /**
+         * 使用jdk8,新特性,函数式编程
+         */
+        return (T)Proxy.newProxyInstance(BeanFactory.class.getClassLoader(), new Class[]{target},new HttpInvocationHander());
+    }
+
+
+
 
 
     /**

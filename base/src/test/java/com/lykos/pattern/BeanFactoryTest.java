@@ -1,8 +1,8 @@
 package com.lykos.pattern;
 
 import com.lykos.pattern.factory.BeanFactory;
-import com.lykos.pattern.factory.IHttpUrl;
-import com.lykos.po.People;
+import com.lykos.httpclient.IHttpUrl;
+import com.lykos.common.po.People;
 import org.junit.Test;
 
 /**

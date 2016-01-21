@@ -1,6 +1,6 @@
 package com.lykos.jdk8;
 
-import com.lykos.po.People;
+import com.lykos.common.po.People;
 import org.junit.Test;
 
 import java.util.Arrays;

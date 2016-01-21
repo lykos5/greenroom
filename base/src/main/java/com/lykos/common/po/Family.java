@@ -1,4 +1,4 @@
-package com.lykos.po;
+package com.lykos.common.po;
 
 /**
  * Created by Lykos on 16/1/7.

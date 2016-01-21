@@ -11,6 +11,7 @@ repositories {
 
 ext{
     slf4f='1.7.12'
+    httpclient = '4.5'
 }
 
 //所有项目使用的公共配置
