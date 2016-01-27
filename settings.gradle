@@ -1,4 +1,6 @@
 rootProject.name = 'greenroom'
 include 'base'
 include 'BaseApp'
+include 'MvcApi'
+include 'MvcApi'
 

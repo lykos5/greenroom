@@ -12,6 +12,9 @@ repositories {
 ext{
     slf4f='1.7.12'
     httpclient = '4.5'
+    springVersion = '4.1.4.RELEASE'
+    hibernateVersion = '4.3.8.Final'
+    jacksonVersion = '2.6.4'
 }
 
 //所有项目使用的公共配置
