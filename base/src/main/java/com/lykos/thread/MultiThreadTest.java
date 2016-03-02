@@ -28,8 +28,12 @@ public class MultiThreadTest {
 		pool.shutdown();//启动一次顺序关闭，执行以前提交的任务，但不接受新任务。
 
 		while (!pool.isTerminated()) {// 如果关闭后所有任务都已完成，则返回 true。
+			System.out.println("f1`s isDone is "+f1.isDone());
+			System.out.println("f2`s isDone is "+f2.isDone());
 		}
 		System.out.println("Finished all threads");
+		System.out.println("f1`s isDone is "+f1.isDone());
+		System.out.println("f2`s isDone is "+f2.isDone());
 		System.out.println(">>>" + (Long)f1.get());
 		System.out.println(">>>" + f2.get().toString());
 	}
@@ -44,6 +48,7 @@ class MyCallable implements Callable {
 
 	@Override
 	public Long call() throws Exception {
+		Thread.sleep(500);
 		return Long.parseLong(oid );
 	}
 	
