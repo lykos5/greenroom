@@ -1,0 +1,5 @@
+RMI(Remote Method Invoke) 远程方法调用
+
+1.只要一个类extends了java.rmi.Remote接口，即可成为存在于服务器端的远程对象
+2.extends了Remote接口的类或者其他接口中的方法若是声明抛出了RemoteException异常，则表明该方法可被客户端远程访问调用
+3.远程对象必须实现java.rmi.server.UniCastRemoteObject类，这样才能保证客户端访问获得远程对象时
