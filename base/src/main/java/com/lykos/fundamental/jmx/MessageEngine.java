@@ -30,6 +30,11 @@ public class MessageEngine extends NotificationBroadcasterSupport implements Mes
     }
 
     @Override
+    public void setName(String name) {
+        System.out.println(name);
+    }
+
+    @Override
     public void stop() {
         Echo.running = false;
     }

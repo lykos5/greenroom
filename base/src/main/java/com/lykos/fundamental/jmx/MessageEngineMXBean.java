@@ -12,4 +12,5 @@ public interface MessageEngineMXBean {
     Message getMessage();
     void setMessage(Message message);//修改message
     String getName();
+    void setName(String name);
 }

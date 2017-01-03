@@ -11,9 +11,12 @@ public class MessageEngineAgent {
     public void start(){
         try {
             MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
-            ObjectName mxBeanName = new ObjectName("com.lykos.fundamental.jmx:type=MessageEngine");
+            ObjectName mxBeanName = new ObjectName("myapp:type=这是type,name=这是name");
+            ObjectName mxBeanName1 = new ObjectName("myapp:type=这是type,name=这是name1");
             MessageEngineMXBean mxBean = new MessageEngine();
+            MessageEngineMXBean mxBean2 = new MessageEngine();
             mbs.registerMBean(mxBean, mxBeanName);
+            mbs.registerMBean(mxBean2, mxBeanName1);
         } catch (Exception e) {
             e.printStackTrace();
         }
