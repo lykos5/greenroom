@@ -20,7 +20,7 @@ public class TicketInvocationHander implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Class objectClass = Object.class;//Object class
         Class methodDeclareClass = method.getDeclaringClass();//方法定义类
-        if(objectClass!=methodDeclareClass){//Object 的方法不做代理
+        if(objectClass==methodDeclareClass){//Object 的方法不做代理
             return method.invoke(ticketSale,args);
         }
         System.out.println(method.getName()+"---proxy"+proxy.toString()+"------------代理火车票开始object.class="+Object.class+"---DeclaringClass"+method.getDeclaringClass());
