@@ -9,7 +9,7 @@ public class Echo {
     public static boolean pause = false;
 
     public static void main(String[] args) {
-        System.out.println(args[0]);
+       // System.out.println(args[0]);
         // 开启JMX Agent。如果不需要JMX,只是单独运行程序，请屏蔽掉下面这行代码。
         System.out.println(System.getProperty("com.sun.management.jmxremote.port"));
         new MessageEngineAgent().start();
